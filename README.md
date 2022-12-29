@@ -6,3 +6,8 @@ Le but de ce repo est de présenter une solution d'architecture cloud à notre p
 
 Le nom du projet est : 'Robustesse des réseaux de neuronnes face aux attaques adverses' appliqué au domaine médical. 
 
+## Collaborateurs :
+Louis Gidrol (Whaoo)
+Florentin Flament (Florflam)
+Méline Libert (melinelbt)
+
