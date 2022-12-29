@@ -8,6 +8,8 @@ Le nom du projet est : 'Robustesse des réseaux de neuronnes face aux attaques a
 
 ## Collaborateurs :
 Louis Gidrol (Whaoo)
+
 Florentin Flament (Florflam)
+
 Méline Libert (melinelbt)
 
