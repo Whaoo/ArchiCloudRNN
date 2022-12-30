@@ -85,12 +85,17 @@ Src: https://aws.amazon.com/fr/pricing/
 
 ## Architecture Worflow :
 
-As per a DevOps course we had this semester. 
-
 We went for a solution using an EC2 (ubuntu), the user, when he connects to the IP adress of the EC2 (or using a custom webdomain redirecting to the IP) he arrives on the homepage of the solution.
 
 - He is asked to select an image of a scan he want to test.
-- He selects the attacks he want to tryout and the number of defense he wants to 
+- He selects the attacks he want to tryout and the number of defense he wants to test.
+- Then the image and the config file are pushed to an Amazon S3 bucket.
+- Added to the S3, this triggers a Lambda functions that call SNS to send a notification to the admin, reporting that a photo is going to be tested.
+- The lambda function push to one of the 3 SQS avaible based on the config files parameters (1 or multiple attack, with or without test of defenses) 
+- The SQS manage the queue, and then trigger the correct lambda(s) linked to it. (5 in the cas if we want the 5 attack, without test of defenses).
+- The lambda uses a bucket S3 where a pre-trained model is avaible. In the case the lambda returns an error, it's logs are stocked in CloudWatch. In the case all went as planned in the process, then the results (accuracy, image_id, model_used, attack_id) are stored in a csv file in the same S3 as the pretrained model in /results/$id.
+- If the task was to apply defense solutions to the model, then a Lambda function uses the model stored on the S3, and goes again in SQS to test the defense applyed. 
+- The csv file is then used to display graphs and tables on the webpage the user is consulting.
 
 ## Closer look at the lambda(s) situtation : 
 
