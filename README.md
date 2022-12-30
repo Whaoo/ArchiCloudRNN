@@ -3,7 +3,7 @@ Possible cloud architecture for INGE3 project
 
 The purpose of this repo is to present a cloud architecture solution to our final year project at ESME Sudria. 
 
-The project name is : 'Robustness of neural networks against adversarial attacks' applied to the medical domain.
+The project's name is : 'Robustness of neural networks against adversarial attacks' applied to the medical domain.
 
 ## Participants :
 Louis Gidrol (Whaoo)
@@ -14,7 +14,7 @@ Méline Libert (melinelbt)
 
 ## Context
 
-The project consists of training a neural network model to which different targeted and non-targeted attacks are applied and strengthening the model after each attack result. 
+The project consists in training a neural network model to which different targeted and non-targeted attacks are applied and finding 'defending techniques" strengthening the model after each attack result and test its robustness. 
 
 The model is trained on scan images of human brains, both healthy and with Alzheimer's disease.
 
