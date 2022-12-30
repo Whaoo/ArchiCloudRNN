@@ -18,6 +18,8 @@ The project consists in training a neural network model to which different targe
 
 The model is trained on scan images of human brains, both healthy and with Alzheimer's disease.
 
+We currently only studied the state of art and some attacks avaible. We will focus during the second part of the semester on the defense mechanism. But we still included the defense part in the architecture. 
+
 ## Project architecture 
 
 <p align="center">
