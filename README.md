@@ -12,6 +12,11 @@ Florentin Flament (Florflam)
 
 Méline Libert (melinelbt)
 
+## Context
+
+The project consists of training a neural network model to which different targeted and non-targeted attacks are applied and strengthening the model after each attack result. 
+
+The model is trained on scan images of human brains, both healthy and with Alzheimer's disease.
 
 ## Project architecture 
 
@@ -52,3 +57,10 @@ SQS : Amazon SQS is a fully managed message queuing service that allows you to d
 </p>
 CloudWatch : 
 Amazon CloudWatch is a monitoring service for AWS resources and applications that provides data and operational insights, allows you to set alarms, and enables you to visualize, search, and analyze logs. It is pay-as-you-go with no upfront costs or long-term commitments.
+
+## Why we choosed going with AWS :
+
+
+## Other solutions :
+
+We could also have choosen to use a VPS from a cloud provider like OVH, deployed an ubuntu server edition on it, launched a FastAPI/Flask server, that executed the python scripts and display the result on the webpage. But that would cost more than 10$, where the initial option will be way less, as it is a pay as you go, and we won't be using it that much. 
