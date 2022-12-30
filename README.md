@@ -42,7 +42,7 @@ S3 : Amazon S3 is a cloud storage service that offers scalable, high-durability 
   <img width="100" height="70" src="https://github.com/Whaoo/ArchiCloudRNN/blob/main/images/lambda.png?raw=true">
 </p>
 Lambda : Amazon Lambda is a serverless computing service that allows you to run code in response to events and automatically manages the underlying compute resources. It is pay-as-you-go, with no upfront costs or long-term commitments, and enables you to build and run event-driven applications and services without the need to worry about infrastructure.
-It'as a FaaS : Function as a Service (FaaS) is a cloud computing model in which a provider allows users to run their own code in the cloud without worrying about infrastructure or maintenance. FaaS is cost-effective and convenient, abstracting away the underlying infrastructure and handling all deployment tasks. It is particularly useful for applications with variable or bursty workloads.
+It's a FaaS : Function as a Service which is a cloud computing model in which a provider allows users to run their own code in the cloud without worrying about infrastructure or maintenance. FaaS is cost-effective and convenient, abstracting away the underlying infrastructure and handling all deployment tasks. It is particularly useful for applications with variable or bursty workloads.
 
 <p align="center">
   <img width="100" height="70" src="https://github.com/Whaoo/ArchiCloudRNN/blob/main/images/amazon_sns.png?raw=true">
@@ -87,7 +87,7 @@ Src: https://aws.amazon.com/fr/pricing/
 
 ## Architecture Workflow :
 
-We went for a solution using an EC2 (ubuntu), the user, when he connects to the IP adress of the EC2 (or using a custom webdomain redirecting to the IP) he arrives on the homepage of the solution.
+We went for a solution using an EC2 (ubuntu), the user, when he connects to the IP address of the EC2 (or using a custom webdomain redirecting to the IP) he arrives on the homepage of the solution.
 
 - He is asked to select an image of a scan he want to test.
 - He selects the attacks he want to tryout and the number of defense he wants to test.
