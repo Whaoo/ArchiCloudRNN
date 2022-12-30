@@ -60,22 +60,6 @@ Amazon CloudWatch is a monitoring service for AWS resources and applications tha
 
 ## Why we choosed going with AWS :
 
-## Architecture Worflow :
-
-
-Src: https://aws.amazon.com/fr/pricing/
-
-## Closer look at the lambda(s) : 
-
-<p align="center">
-  <img width="800" height="475" src="https://github.com/Whaoo/ArchiCloudRNN/blob/main/images/Pr%C3%A9sentation2_2.jpg?raw=true">
-</p>
-
-Each lambda is executing python3 code. 
-
-## Other solutions :
-
-We could also have choosen to use a VPS from a cloud provider like OVH, deployed an ubuntu server edition on it, launched a FastAPI/Flask server, that executed the python scripts and display the result on the webpage. But that would cost more than 10$, where the initial option will be way less, as it is a pay as you go, and we won't be using it that much. 
 
 
 The project is located in a .ipynb file, and could be sufficient for personal, one-off use on a simple jupyter notebook localhost server. 
@@ -92,3 +76,27 @@ SQS : Less than 1 Million entry is free
 SNS : Publication API requests and batch publication requests are charged at USD 0.33 per million requests and USD 0.0187 per GB of payload data.
 S3 : 5Go free per month, then 0,023$ per Gb
 EC2 : One free per month.
+
+Src: https://aws.amazon.com/fr/pricing/
+
+
+## Architecture Worflow :
+
+As per a DevOps course we had this semester. 
+
+We went for a solution using an EC2 (ubuntu), the user, when he connects to the IP adress of the EC2 (or using a custom webdomain redirecting to the IP) he arrives on the homepage of the solution.
+
+- He is asked to select an image of a scan he want to test.
+- 
+
+## Closer look at the lambda(s) situtation : 
+
+<p align="center">
+  <img width="800" height="475" src="https://github.com/Whaoo/ArchiCloudRNN/blob/main/images/Pr%C3%A9sentation2_2.jpg?raw=true">
+</p>
+
+Each lambda is executing python3 code. 
+
+## Other solutions :
+
+We could also have choosen to use a VPS from a cloud provider like OVH, deployed an ubuntu server edition on it, launched a FastAPI/Flask server, that executed the python scripts and display the result on the webpage. But that would cost more than 10$, where the initial option will be way less, as it is a pay as you go, and we won't be using it that much. 
