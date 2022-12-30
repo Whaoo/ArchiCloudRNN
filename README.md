@@ -1,4 +1,4 @@
-# ArchiCloudRNN
+# DAT - ArchiCloudRNN
 Possible cloud architecture for INGE3 project 
 
 The purpose of this repo is to present a cloud architecture solution to our final year project at ESME Sudria. 
