@@ -60,6 +60,18 @@ Amazon CloudWatch is a monitoring service for AWS resources and applications tha
 
 ## Why we choosed going with AWS :
 
+## Architecture Worflow :
+
+
+Src: https://aws.amazon.com/fr/pricing/
+
+## Closer look at the lambda(s) : 
+
+<p align="center">
+  <img width="800" height="475" src="https://github.com/Whaoo/ArchiCloudRNN/blob/main/images/Pr%C3%A9sentation2_2.jpg?raw=true">
+</p>
+
+Each lambda is executing python3 code. 
 
 ## Other solutions :
 
