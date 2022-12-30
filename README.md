@@ -85,7 +85,7 @@ EC2 : One free per month.
 Src: https://aws.amazon.com/fr/pricing/
 
 
-## Architecture Worflow :
+## Architecture Workflow :
 
 We went for a solution using an EC2 (ubuntu), the user, when he connects to the IP adress of the EC2 (or using a custom webdomain redirecting to the IP) he arrives on the homepage of the solution.
 
